@@ -2,18 +2,19 @@ x =int(input("ingrese el numero: "))
 j =int(input("ingrese el numero: "))
 o =int(input("ingrese el numero: "))
 
-if j > x:
+if x>j:
+   if o>x:
+      print(f"el mayor es{x}")
+   else:
+      print(f"wl mayor es{o}")
 
- print ('j es mayor que: ',x)
+if j>o:
+   if o>j:
+      print(f"el mayor es{j}")
+   else:
+      print(f"el mayo es{o}")
 
-else:
- 
- print("x es menor que ",j)
 
-if o < x:
- print("o es menor que",x)
 
-else:
- print("x es mayor que",o)
 
 
