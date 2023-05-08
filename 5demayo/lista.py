@@ -32,13 +32,15 @@ print(f"El numero menor es {menor}")
 
 #MODA
 moda=0
-for i in range (lista):
+for j in lista:
     cont=0
     if lista[i] == lista[j]:
      cont=cont+1
     if cont>cant:
          cant= cont
-         moda=lista[i]
+         moda=lista[i]    
+         
+         
     if cant==1:
         print("no tiene moda")
     else:
