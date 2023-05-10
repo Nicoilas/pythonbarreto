@@ -28,17 +28,29 @@ print(promedioLista(l2))
 print(promedioLista(l3))
 
 def mayor(lista):
-   mayor=0
+   m=0
    for i in lista:
-    if i>mayor:mayor=i
-    return mayor
-print(mayor)
+       if i>m:
+        m=i
+       return m
+print("mayor",mayor(l1))
+print("mayor",mayor(l2))
+print("mayor",mayor(l3))
+   
+
 def menor(lista):
-    menor=0
+    m=0
     for i in lista:
-     if i>menor:menor=i
-    return menor
-print(menor)     
+       if i>m:
+         m=i
+       return m
+print("menor",menor(l1))
+print("menor",menor(l2))
+print("menor",menor(l3))
+
+def ascebdente(lista):
+    for i in range(lista):
+        print
 
 
 
