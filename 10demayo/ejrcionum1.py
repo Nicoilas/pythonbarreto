@@ -48,9 +48,59 @@ print("menor",menor(l1))
 print("menor",menor(l2))
 print("menor",menor(l3))
 
-def ascebdente(lista):
-    for i in range(lista):
-        print
+def ordenar_ascendente(lista):
+   lista.sort()
+print("Arreglo ordenado en orden ascendente:")
+print(l1)
+print(l2)
+print(l3)
 
+def ordenar_desendente(lista):
+   lista.sort()
+print("Arreglo ordenado en orden desendente:")   
+print(l1)
+print(l2)
+print(l3)
+
+import statistics
+
+def calcular_moda(lista):
+    try:
+        moda = statistics.mode(lista)
+        print("La moda del arreglo es:", moda)
+        print(l1)
+        print(l2)
+        print(l3)
+    except statistics.StatisticsError as e:
+        print("No se puede calcular la moda del arreglo:", e)
+        print(l1)
+        print(l2)
+        print(l3)
+
+def mediana(lista):
+    e=0
+    for i in lista:
+       if i>e:
+         e=i
+       return e
+print("mediana",mediana(l1))
+print("mediana",mediana(l2))
+print("mediana",mediana(l3))
+
+def buscar_numero(lista):
+   b=0
+   for i in lista:
+      if i>b:
+         b=i
+      return b  
+print("buscar_numero",buscar_numero(l1))
+print("buscar_numero",buscar_numero(l2))
+print("buscar_numero",buscar_numero(l3))   
+   
+
+
+        
+  
+   
 
 
